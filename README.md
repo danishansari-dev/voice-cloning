@@ -62,7 +62,9 @@ graph TD
     K --> L[SynthPlan]
     L --> M{Segment Type?}
 
-    M -->|tts| N[TTSEngine<br/>XTTS-v2]
+    M -->|tts| EC[EmotionConditioner<br/>gets XTTS params]
+    H -->|baseline arousal/valence| EC
+    EC -->|XTTS params| N[TTSEngine<br/>XTTS-v2]
     M -->|event| O[BarkEventGenerator<br/>Bark]
     M -->|pause| P[Silence Generator]
 
