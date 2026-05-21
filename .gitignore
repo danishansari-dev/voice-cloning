@@ -1,0 +1,19 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+venv/
+ENV/
+
+# Local cache/data directories
+models/
+profiles/
+output/
+_tmp_clip_*.wav
+
+# OS files
+.DS_Store
+Thumbs.db
